@@ -45,6 +45,9 @@ int main() {
 	}
 	
 	printf("avg = %.2lf", avg/3);
+	
+	printf("size %d", sizeof(a)/sizeof(a[0]));
+	
 	fclose(file);
 	system("pause");
 	return 0;
