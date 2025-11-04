@@ -37,11 +37,14 @@ int main() {
 		printf("Bichih file oldsongui!");
 		return 1;
 	}
-		
+	double avg = 0;
 	for(int i=0; i<3; i++) {
 		fscanf(file, "%s %d %lf", a[i].ner, &a[i].nas, &a[i].tsalin);
 		printf("==========%s %d %lf", a[i].ner, a[i].nas, a[i].tsalin);
+		avg += a[i].tsalin;
 	}
+	
+	printf("avg = %.2lf", avg/3);
 	fclose(file);
 	system("pause");
 	return 0;
